@@ -13,6 +13,11 @@ class Student
     end
 
     def grade
-        
+        average = []
+
+        @scores.each do |score|
+           average << score.sum / score.size
+        end
+        average 
     end
 end
